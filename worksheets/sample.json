@@ -1,0 +1,12 @@
+{
+  "id": "SAMPLE-01",
+  "title": "Sample worksheet",
+  "questions": [
+    {"id": "Q1", "marks": 4, "calculator": true, "stem": "Solve $2x^2 - 4x - 6 = 0$ using the quadratic formula. Show your working."},
+    {"id": "Q2", "marks": 1, "calculator": false, "stem": "Which of these is equal to $\\sqrt{50}$?",
+     "options": {"A": "$25$", "B": "$5\\sqrt{2}$", "C": "$2\\sqrt{5}$", "D": "$10\\sqrt{5}$"}},
+    {"id": "Q3", "marks": 4, "calculator": false, "stem": "Find $\\dfrac{dy}{dx}$ when $y = x^3\\ln x$, and hence find the exact $x$-coordinate of the stationary point."},
+    {"id": "Q4", "marks": 3, "calculator": true, "stem": "A cylinder has radius $4$ cm and height $10$ cm. Find its volume. **Explain each step.**"},
+    {"id": "Q5", "marks": 3, "calculator": false, "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/2} \\sin x\\,dx$ and $\\displaystyle\\lim_{x\\to 0}\\frac{\\sin 3x}{x}$."}
+  ]
+}

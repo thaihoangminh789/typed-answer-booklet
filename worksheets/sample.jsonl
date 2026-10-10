@@ -1,0 +1,4 @@
+{"id": "ALG-02", "title": "Algebra check (JSONL example)"}
+{"id": "Q1", "marks": 2, "calculator": false, "stem": "Expand and simplify $(x+3)(x-5)$."}
+{"id": "Q2", "marks": 1, "calculator": "no", "stem": "Solve $|x-2| \\le 3$.", "options": ["$-1 \\le x \\le 5$", "$x \\le 5$", "$1 \\le x \\le 5$", "$x \\ge -1$"]}
+{"id": "Q3", "marks": 3, "calculator": "yes", "stem": "Find $\\sum_{k=1}^{20} (3k+1)$."}
