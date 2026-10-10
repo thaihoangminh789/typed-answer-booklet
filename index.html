@@ -7,16 +7,29 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Typed Answer Booklet</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232453c4'/><text x='16' y='23' font-size='19' font-family='serif' font-style='italic' text-anchor='middle' fill='white'>ƒx</text></svg>">
-  <script type="module" crossorigin src="./assets/index-MRxrARkx.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DWpSpOiB.css">
+  <script type="module" crossorigin src="./assets/index-BKSI1KSJ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DojKph5a.css">
 </head>
 <body>
   <header class="top">
     <div class="title"><h1 id="wsTitle">Answer booklet</h1><p id="wsSub"></p></div>
-    <div class="name"><label for="studentName">Name</label><input type="text" id="studentName" placeholder="Your full name" autocomplete="name"></div>
+    <div class="name" id="nameBox"><label for="studentName">Name</label><input type="text" id="studentName" placeholder="Your full name" autocomplete="name"></div>
+    <button type="button" class="linkbtn" id="signInBtn" hidden title="Your work is then saved online: carry on on any phone or computer">Sign in with my code</button>
+    <div class="acct" id="acct" hidden><span class="who" id="acctName"></span><span class="sync" id="syncState" role="status"></span><button type="button" class="linkbtn" id="signOutBtn">Sign out</button></div>
     <div class="meter"><span id="meterText"></span><div class="track"><i id="meterBar"></i></div></div>
     <button type="button" class="btn primary" id="goHandin">Hand in</button>
   </header>
+  <div class="syncask" id="syncAsk" role="alert" hidden></div>
+  <dialog id="signinDlg" aria-labelledby="signinTitle">
+    <form id="signinForm" method="dialog">
+      <h2 id="signinTitle">Sign in with your code</h2>
+      <p class="muted">Your teacher gives you a code like <b>K7QM-2XPA</b>. Your work is then saved online: open the same link on another phone or computer, sign in, and carry on. Your teacher sees how far you are.</p>
+      <label for="codeIn">Your code</label>
+      <input type="text" id="codeIn" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX">
+      <p class="status err" id="codeErr" role="status"></p>
+      <div class="actions"><button type="submit" class="btn primary" id="codeGo">Sign in</button><button type="button" class="btn quiet" id="codeCancel">Cancel</button></div>
+    </form>
+  </dialog>
   <div class="app">
     <nav class="rail" id="rail" aria-label="Questions"></nav>
     <main id="stage"></main>
