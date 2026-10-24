@@ -3379,7 +3379,7 @@ img.ProseMirror-separator {
       <div class="photos" id="photoList"></div>
       <div class="status" id="photoStatus" role="status"></div>
     </div>
-    <p class="muted" id="photoSignIn" hidden>Did it on paper? <b>Sign in with my code</b> (at the top) to send photos of your pages here.</p>
+    <p class="muted" id="photoSignIn" hidden>Did it on paper? <b>Sign in with my code</b> (at the top) to send photos or a PDF of your pages here.</p>
     <div class="actions">
       <button type="button" class="btn primary" id="handBtn" hidden>Hand in to my teacher</button>
       <button type="button" class="btn primary" id="copyBtn">Copy my work</button>
