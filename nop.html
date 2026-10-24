@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Nộp bài">
+  <meta name="theme-color" content="#2453c4">
+  <title>Nộp bài</title>
+  <link rel="manifest" href="nop.webmanifest">
+  <link rel="icon" href="nop-icon.svg">
+  <link rel="apple-touch-icon" href="nop-icon.png">
+  <script type="module" crossorigin src="./assets/nop-C4ogRcBW.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/photo-86GuAWol.js">
+  <link rel="stylesheet" crossorigin href="./assets/photo-ClMYyZsN.css">
+  <link rel="stylesheet" crossorigin href="./assets/nop-CIuWcVVF.css">
+</head>
+<body class="nop">
+  <main class="nopwrap">
+    <header class="nophead">
+      <h1>Nộp bài</h1>
+      <p class="muted" id="who"></p>
+    </header>
+
+    <section id="signin" hidden>
+      <p>Nhập mã của em (thầy đã gửi), ví dụ <b>K7QM-2XPA</b>. Chỉ cần nhập một lần.</p>
+      <p class="muted en">Type the code your teacher gave you. Only once.</p>
+      <form id="codeForm">
+        <input type="text" id="code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX" aria-label="Mã của em">
+        <button type="submit" class="btn primary big" id="codeGo">Vào</button>
+      </form>
+      <p class="status err" id="codeErr" role="status"></p>
+    </section>
+
+    <section id="drop" hidden>
+      <input type="file" id="files" accept="image/*,application/pdf,.pdf" multiple hidden>
+      <button type="button" class="btn primary huge" id="pick">📷 Chụp ảnh hoặc chọn file</button>
+      <p class="muted tip">Chụp từng trang, <b>theo thứ tự</b>, thấy rõ mã QR ở trang 1. Ảnh hoặc PDF đều được.<br><span class="en">Photos of each page in order, or a PDF.</span></p>
+      <div id="result" class="result" hidden>
+        <p class="done" id="doneLine" role="status"></p>
+        <div id="groups"></div>
+        <div class="actions"><button type="button" class="btn" id="more">+ Thêm trang</button><button type="button" class="btn quiet" id="newOne">Nộp bài khác</button></div>
+      </div>
+      <details class="hist" id="hist" hidden><summary>Đã nộp gần đây</summary><ul id="histList"></ul></details>
+    </section>
+
+    <footer class="nopfoot"><button type="button" class="linkbtn" id="signOut" hidden>Không phải em? Đổi mã</button></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,3 @@
+{"name": "Nộp bài", "short_name": "Nộp bài", "start_url": "nop.html", "scope": "./", "display": "standalone",
+ "background_color": "#f5f7fb", "theme_color": "#2453c4",
+ "icons": [{"src": "nop-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "nop-icon.svg", "sizes": "any", "type": "image/svg+xml"}]}
